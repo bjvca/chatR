@@ -74,7 +74,7 @@ chatR <- function(question, model = "gpt-4-turbo",my_API = Sys.getenv("key1"), u
   assign(".chatR_history", global_history, envir = .GlobalEnv)
 
   # Return only the assistant's response
-  return(assistant_response)
+  return(cat(assistant_response))
 }
 
 # Example usage
