@@ -36,7 +36,7 @@ chatR <- function(question, model = "gpt-4-turbo",my_API = Sys.getenv("key1"), u
   body <- list(
     model = model,
     messages = c(
-      list(list(role = "system", content = "You are a helpful assistant.")),
+      list(list(role = "system", content = "You are a helpful assistant that is an expert in R.")),
       if (use_history) global_history else list(list(role = "user", content = question))
     )
   )
